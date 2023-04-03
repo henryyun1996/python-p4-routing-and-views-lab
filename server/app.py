@@ -19,7 +19,7 @@ def hello():
 
 @app.route('/count/<int:numbers>')
 def count(numbers):
-    output = f''
+    output = ''
     for number in range(numbers):
         output += f'{number}\n'
     return output
